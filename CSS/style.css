@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+}
+body{
+  overflow: auto;
+}
+
+.top-bar {
+    background: #2f343a;
+    color: #fff;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: flex-end;
+   justify-items:center;
+}
+
+.social{
+  display: flex;
+ padding: 0 40px;
+
+}
+
+.social a {
+    color: #ccd6d6;
+    margin: 4px;
+    padding: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #1dd1d1;
+    border-radius: 50%;
+   
+}
+
+.social a:hover ,.search i:hover{
+  background-color: #115fcc;
+  color: grey;
+}
+.search {
+    background: #3b4047;
+    padding: 6px 12px;
+    border-radius: 3px;
+    margin: 0 30px;
+}
+
+.search input {
+    border: none;
+    background: transparent;
+    color: white;
+    outline: none;
+}
+
+.search i  {
+    color: #1dd1d1;
+    font-weight: bold;
+    
+}
+
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.logo i {
+    color: #1dd1d1;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+nav a.active,
+nav a:hover {
+    color: #1dd1d1;
+}
+
+.contact {
+    text-align: right;
+    font-size: 14px;
+}
+
+.contact i {
+    color: #1dd1d1;
+}
+
+
+.hero {
+  
+    height: 90vh;
+    background-image: url("../images/slider_1.jpg") ;
+    /* background: cover center no-repeat; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+     background-size: cover;         
+    background-position: center;    
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content {
+  
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: 700px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.hero-content h1 {
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 35px;
+    background: #1dd1d1;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #2f343a;
+        flex-direction: column;
+        text-align: center;
+        display: none;
+        padding: 20px 0;
+    }
+
+    nav a {
+        color: white;
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
+    nav a.active {
+        color: #1dd1d1;
+    }
+
+    nav.show {
+        display: flex;
+    }
+}
+/* 2ns part for services */
+.services {
+  text-align: center;
+  padding: 60px 20px;
+  
+  background-image: linear-gradient(to top left,rgb(18, 19, 18) 20% ,transparent 20%,rgb(247, 244, 244) 60%);
+  
+}
+
+.subtitle {
+  font-optical-sizing: auto;
+  color: #353434;
+  font-size: 18px;
+}
+
+.title  {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-between; /* مسافات متساوية */
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.service-box {
+  flex: 1;
+  padding: 20px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  background: #1bb3b3;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  font-size: 24px;
+}
+
+.service-box h3 {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  color: #777;
+  font-size: 14px;
+}
+
+.btn {
+  margin-top: 40px;
+  padding: 10px 25px;
+  border: none;
+  background: #1bb3b3;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.divider {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  background-color: #1cc7c1;
+  transform: rotate(45deg);
+  margin: 0 auto;
+}
+
+.divider::after
+{ 
+  content: "";
+  position: absolute;
+  top:-25px;
+  left: 0; 
+  width: 60px;
+  height: 3px;
+  background-color: #1cc7c1;
+   transform: translateY(-50%) rotate(-45deg);
+  animation: moveLine 2s infinite ease-in-out;
+}
+
+
+
+
+.divider::before {
+content:"";
+position: absolute;
+left: 0px;
+right:0px;
+width: 60px;
+height: 3px;
+background-color: hsl(330, 75%, 39%);
+
+  /* margin-left: 10px; */
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+
+
+
+
+
+
+.stats { height:300px;
+  background: linear-gradient(
+      rgba(0, 60, 80, 0.85),
+      rgba(0, 60, 80, 0.85)
+    ),
+    url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d")
+      center/cover no-repeat;
+  padding: 80px 20px;
+  color: #fff;
+  text-align: center;
+ 
+}
+
+.stats h4 {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.stats h2 {
+  font-size: 30px;
+  margin: 10px 0 50px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.stat-box {
+  flex: 1;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0 auto 15px;
+}
+
+.stat-box p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+/* =========================
+   TABLET (max-width: 992px)
+========================= */
+@media (max-width: 992px) {
+
+  .services-container,
+  .stats-container {
+    gap: 20px;
+  }
+
+  .title,
+  .stats h2 {
+    font-size: 26px;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    font-size: 26px;
+  }
+}
+
+/* =========================
+   MOBILE (max-width: 768px)
+========================= */
+@media (max-width: 768px) {
+
+  .services-container,
+  .stats-container {
+    flex-direction: column;   /* العناصر تحت بعض */
+    align-items: center;
+  }
+
+  .service-box,
+  .stat-box {
+    max-width: 400px;
+  }
+
+  .title,
+  .stats h2 {
+    font-size: 22px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE (max-width: 480px)
+========================= */
+@media (max-width: 480px) {
+
+  .circle {
+    width: 90px;
+    height: 90px;
+    font-size: 22px;
+  }
+
+  .service-box p,
+  .stat-box p {
+    font-size: 13px;
+  }
+}
